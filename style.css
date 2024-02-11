@@ -1,21 +1,43 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(38,110,183);
+    background-image: url(istockphoto-1369878062-612x612.jpg);
+    background-repeat: repeat; /* Prevent background image from repeating */
+    background-position: center top;
+    background-size: cover;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 
 }
+h1{
+    font-size: 1.5em;
+    color: linear-gradient(144deg,#00FFFF, #39FF14 50%,#FF69B4);
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#container{
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+    backdrop-filter: blur(8px);
+}
 #info{
-    position:relative;
+    font-size: 0.75em;
 }
 #icon{
     height: auto;
     width: auto;
-    max-width: 175px;;
+    max-width: 709px;
+    max-height: 75px;
     margin: 15px;
     margin-right: 50px;
-    margin-left: -200px;
+    margin-left: -100px;
 
 }
 #header{
@@ -33,22 +55,25 @@ body{
     padding:10px
 }
 #head{
-    background-color: rgb(255, 255, 255);
     height: auto;
     width: 80%;
     text-align: center;
     font-size: 30px;
-    justify-content: space-around
+    justify-content: space-around;
+    background-color : #FFFFFF;
+    border-bottom-left-radius: 175px;
+    border-bottom-right-radius: 175px;
 }
 #guess{
+    margin: 0px;
     text-align: center;
     color:white;
-    font-size: 50px;
+    font-size: 2.25em;
     font-weight: bolder;   
 }
 
 #textbox{
-    height: 75px;
+    height: 50px;
     width:325px;
     border-radius: 25px;
     font-size: 25px;
@@ -56,12 +81,29 @@ body{
 }
 
 .button{
-    margin: 50px;
+    margin: 20px;
     padding:30px;
-    border-radius: 15px;
-    background-color: rgb(19,131,153);
-    color:white;
-    font-weight: lighter;
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
 }
 #input,#button{
     display: flex;
@@ -72,11 +114,11 @@ body{
     
 }
 #newgame:hover{
-    font-size: 1.05em;
+    font-size: 1.1em;
 }
 #result,#attempts{
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 #resultcontainer,#attemptcontainer{
@@ -85,8 +127,9 @@ body{
     justify-content: center;
     background-color: aqua;
     text-align: center;
-    margin: 35px;
-    padding: 15px;
+    margin: 20px;
+    padding: 0.1px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 20px;
     display: none;
 }
@@ -97,3 +140,48 @@ body{
     
 
 }
+.button:active,
+.button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+@media (max-width: 768px) {
+    #container,#head {
+        width: 80%; /* Adjust width for smaller screens */
+
+    }
+    h1{
+        font-size: 1em;
+        
+    }
+    #head{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    #container,#head{
+        width: 90%; /* Further adjust width for even smaller screens */
+
+    }
+    #icon{
+        margin: 0px;
+    }
+    #head{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+
+
+
+
+
