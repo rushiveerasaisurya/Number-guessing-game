@@ -6,13 +6,17 @@ body{
 
 
 }
+#info{
+    position:relative;
+}
 #icon{
-    height: 100px;
-    width: 175px;
+    height: auto;
+    width: auto;
+    max-width: 175px;;
     margin: 15px;
     margin-right: 50px;
     margin-left: -200px;
-    
+
 }
 #header{
     display: flex;
@@ -30,9 +34,8 @@ body{
 }
 #head{
     background-color: rgb(255, 255, 255);
-   
-    height: 30vh;
-    width: 80vw;
+    height: auto;
+    width: 80%;
     text-align: center;
     font-size: 30px;
     justify-content: space-around
