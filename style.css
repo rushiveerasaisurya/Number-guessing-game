@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(38,110,183);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+#icon{
+    height: 100px;
+    width: 175px;
+    margin: 15px;
+    margin-right: 50px;
+    margin-left: -200px;
+    
+}
+#header{
+    display: flex;
+    justify-content: center;
+
+}
+#heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px;
+    margin-top: 0px;
+    
+    padding:10px
+}
+#head{
+    background-color: rgb(255, 255, 255);
+   
+    height: 30vh;
+    width: 80vw;
+    text-align: center;
+    font-size: 30px;
+    justify-content: space-around
+}
+#guess{
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    font-weight: bolder;   
+}
+
+#textbox{
+    height: 75px;
+    width:325px;
+    border-radius: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.button{
+    margin: 50px;
+    padding:30px;
+    border-radius: 15px;
+    background-color: rgb(19,131,153);
+    color:white;
+    font-weight: lighter;
+}
+#input,#button{
+    display: flex;
+    justify-content: center;
+}
+#check:hover{
+    font-size: 1.1em;
+    
+}
+#newgame:hover{
+    font-size: 1.05em;
+}
+#result,#attempts{
+    text-align: center;
+    font-size: 2em;
+}
+
+#resultcontainer,#attemptcontainer{
+
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    text-align: center;
+    margin: 35px;
+    padding: 15px;
+    border-radius: 20px;
+    display: none;
+}
+
+#answercontainer{
+    display: flex;
+    justify-content: center;
+    
+
+}
